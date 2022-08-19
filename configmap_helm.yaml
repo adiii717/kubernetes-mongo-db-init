@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: create-db-configmap
+data:
+  create_db.js: |-
+{{ .Files.Get "create_db.js" }} | indent 4}}
